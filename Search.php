@@ -33,7 +33,6 @@
         background: url(images/cat-see-sea.jpg) no-repeat center fixed;
         background-size: cover;
     }
-
     a:link {
         color: rgb(0, 0, 204);
     }
