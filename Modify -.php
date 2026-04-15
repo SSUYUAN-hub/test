@@ -58,10 +58,10 @@ $record = mysqli_fetch_array($result);
         <h3>
             <form method="POST" action="class.php" name="new">
                 <label for="fname">姓名:</label><br>
-                <input type="text" name="name" value='<?php echo $record[name]; ?>'>
+                <input type="text" name="name" value='<?php echo $record['name']; ?>'>
                 <p>
                     <label for="fname">身分證:</label><br>
-                    <input type="text" name="id" value='<?php echo $record[id]; ?>'>
+                    <input type="text" name="id" value='<?php echo $record['id']; ?>'>
                 <p>
                     <label for="fname">班級別:</label><br>
                     <select name="inc">
@@ -72,14 +72,14 @@ $record = mysqli_fetch_array($result);
                     </select>
                 <p>
                     <label for="fname">出生日期:</label><br>
-                    <input class="date" type="date" name="birthday" value='<?php echo $record[birthday]; ?>'>
+                    <input class="date" type="date" name="birthday" value='<?php echo $record['birthday']; ?>'>
                 <p>
                     性別:
                     <input type="radio" name="sex" value="男生">男生
                     <input type="radio" name="sex" value="女生">女生
                 <p>
                     聯絡地址:<br>
-                    <textarea name="address" cols="50" rows="4"><?php echo $record[address]; ?>
+                    <textarea name="address" cols="50" rows="4"><?php echo $record['address']; ?>
         </textarea>
                 <p>
                     <input type="submit" name="enter" value="新增">
